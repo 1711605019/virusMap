@@ -1,0 +1,69 @@
+page {
+  background-color: #1072F4;
+}
+
+.yq_bg {
+  width: 750rpx !important;
+  height: 533rpx;
+}
+
+#mychart-dom-area canvas {
+  height: 280px !important;
+}
+
+#mychart-dom-line canvas {
+  height: 240px !important;
+}
+
+.yq_tj {
+  background: #fff;
+  box-shadow: 2rpx 6rpx 5rpx #eee;
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  top: 340rpx;
+  padding: 20rpx 10rpx 55rpx 10rpx;
+  z-index: 999;
+  border-radius: 10rpx;
+}
+
+.yq-loca {
+  padding: 130rpx 35rpx 35rpx 35rpx;
+  margin-top: 10px;
+}
+
+.yq-loca-city view {
+  width: 25%;
+  text-align: center;
+}
+
+.icon_dw {
+  width: 18rpx;
+  height: 23rpx;
+}
+
+.add_u {
+  text-decoration: underline;
+}
+
+.icon_line {
+  width: 530rpx;
+  height: 56rpx;
+  margin: 40rpx auto;
+}
+
+.bg_bottom {
+  width: 100%;
+  height: 1313rpx;
+}
+
+.bgwhite {
+  background-color: white;
+}
+.videoView{
+  padding: 10px;
+  box-sizing: border-box;
+}
+video{
+  width: 100%;
+}

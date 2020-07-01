@@ -1,0 +1,169 @@
+/**app.wxss**/
+.container {
+  font-size: 32rpx;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+image,
+cover-image {
+  vertical-align: middle;
+  object-fit: cover;
+
+}
+
+/* 弹性布局 */
+.flex_r_a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  dispiay: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+}
+
+.flex_r_s {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  dispiay: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.flex_c_a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  dispiay: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+
+}
+
+/* 设置公用的字体大小 */
+.font16 {
+  font-size: 32rpx
+}
+
+.font14 {
+  font-size: 28rpx
+}
+
+.font12 {
+  font-size: 24rpx
+}
+
+.font10 {
+  font-size: 20rpx
+}
+
+/* 设置公用的颜色 */
+.color_red {
+  color: #BC381F;
+  font-weight: bold;
+}
+
+.color_red1 {
+  color: #BC381F;
+
+}
+
+.color_orange {
+  color: #D56D20;
+  font-weight: bold;
+}
+
+.color_orange1 {
+  color: #D56D20;
+
+}
+
+.color_33 {
+  color: #333333;
+  font-weight: bold;
+}
+
+.color_green {
+  color: #3B8A50;
+  font-weight: bold;
+}
+
+.color_green1 {
+  color: #3B8A50;
+
+}
+
+.color_b1 {
+  color: #B1B1B1
+}
+
+.color_grade1 {
+  color: #F4DCD0
+}
+
+.color_grade2 {
+  color: #F1AF8D
+}
+
+.color_grade3 {
+  color: #EF8759
+}
+
+.color_grade4 {
+  color: #C84D21
+}
+
+.color_grade5 {
+  color: #7A2F11
+}
+
+.color_99 {
+  color: #999;
+
+}
+
+.bg_f5 {
+  background: #f5f5f5
+}
+
+.m20_0 {
+  margin: 20rpx 0
+}
+
+.mb20 {
+  margin-bottom: 20rpx
+}
+
+.mb15 {
+  margin-bottom: 15rpx
+}
+
+.mb10 {
+  margin-bottom: 10rpx
+}
+
+.mb5 {
+  margin-bottom: 5rpx
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mr5 {
+  margin-right: 5rpx
+}
+
+.pd30 {
+  padding: 30rpx 30rpx 0 30rpx
+}

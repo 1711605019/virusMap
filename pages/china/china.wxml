@@ -1,0 +1,73 @@
+<view class="container">
+	<view>
+		<image src="../../images/banner.jpg" class="yq_bg"></image>
+	</view>
+	<view class="yq_tj">
+		<view class="mb10 ml20">全国疫情</view>
+		<view class="color_b1 font10 mb20 ml20">统计截至 {{date}}</view>
+		<view class="yq_yj_d flex_r_a">
+			<view class="flex_c_a">
+				<view class="color_red font12">确诊</view>
+				<view class="color_red m20_0">{{allConfirm}}</view>
+				<view class="color_b1 font10">较昨日+{{addAllConfirm}}</view>
+			</view>
+			<view class="flex_c_a">
+				<view class="color_orange  font12">疑似</view>
+				<view class="color_orange m20_0">{{suspect}}</view>
+				<view class="color_b1 font10">较昨日+{{addsuspect}}</view>
+			</view>
+			<view class="flex_c_a">
+				<view class="color_33 font12">死亡</view>
+				<view class="color_33  m20_0">{{death}}</view>
+				<view class="color_b1 font10">较昨日+{{adddeath}}</view>
+			</view>
+			<view class="flex_c_a">
+				<view class="color_green font12">治愈</view>
+				<view class="color_green m20_0">{{cured}}</view>
+				<view class="color_b1 font10">较昨日+{{addcured}}</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="bg_f5 yq-loca">
+		<view class="flex_r_s mb20">
+			<view class="font16">本地疫情</view>
+			<view class="flex_r_a">
+				<image src="../../images/icon_dw.png" class="icon_dw mr5"></image>
+				<view class="add_u font12 color_green1">{{city}}</view>
+			</view>
+		</view>
+		<view>
+			<view class="font12 color_99 flex_r_s mb20 yq-loca-city">
+				<view>{{province}}</view>
+				<view>确诊
+					<text class="color_red1 font14">{{dw_confirmedCount}}</text>例</view>
+				<view>死亡
+					<text class="color_99 font14">{{dw_deadCount}}</text>例</view>
+				<view>治愈
+					<text class="color_green1 font14">{{dw_curedCount}}</text>例</view>
+			</view>
+			<view class="font12 color_99 flex_r_s yq-loca-city">
+				<view>{{city}} </view>
+				<view>确诊
+					<text class="color_red1 font14">{{dw1_confirmedCount}}</text>例</view>
+				<view>死亡
+					<text class="color_99 font14">{{dw1_deadCount}}</text>例</view>
+				<view>治愈
+					<text class="color_green1 font14">{{dw1_curedCount}}</text>例</view>
+			</view>
+		</view>
+	</view>
+	<view class="bgwhite">
+		<view class="pd30 font18">全国疫情分布图</view>
+		<view class="map">
+			<ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+		</view>
+
+		<view class="pd30 font18">防疫小知识</view>
+		<view class="videoView">
+			<video src="{{videoSrc}}"></video>
+		</view>
+	</view>
+
+</view>

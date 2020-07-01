@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/china/china",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1072F4",
+    "navigationBarTitleText": "实时疫情",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/china/china",
+        "text": "国内",
+        "iconPath": "images/china.png",
+        "selectedIconPath": "images/china-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "海外",
+        "iconPath": "images/abroad.png",
+        "selectedIconPath": "images/abroad-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

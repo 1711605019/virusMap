@@ -1,0 +1,55 @@
+<view class="body">
+	<view class="container1">
+		<view class="header">
+			<text class="title">海外疫情</text>
+			<text class="updateTime">更新时间 - {{updateTime}}</text>
+		</view>
+		<view class="content">
+			<view class="allConfirm">
+				<view class="number">{{allConfirm}}</view>
+				<view class="item">累计确诊</view>
+				<view class="change">
+					<text>昨日</text>
+					<text>+{{allConfirmAdd}}</text>
+				</view>
+			</view>
+			<view class="nowConfirm">
+				<view class="number">{{nowConfirm}}</view>
+				<view class="item">现有确诊</view>
+				<view class="change">
+					<text>昨日</text>
+					<text>+{{nowConfirmAdd}}</text>
+				</view>
+			</view>
+			<view class="deadNum">
+				<view class="number">{{deadNum}}</view>
+				<view class="item">死亡人数</view>
+				<view class="change">
+					<text>昨日</text>
+					<text>+{{deadNumAdd}}</text>
+				</view>
+			</view>
+			<view class="cureNum">
+				<view class="number">{{cureNum}}</view>
+				<view class="item">治愈人数</view>
+				<view class="change">
+					<text>昨日</text>
+					<text>+{{cureNumAdd}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="map">
+			<ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+		</view>
+		<view class="btn">
+			<view class="{{_static1==1?'isBtn':'noBtn'}}" bindtap="changeConfirm">累计确诊</view>
+			<view class="{{_static2==1?'isBtn':'noBtn'}}" bindtap="changeNowConfirm">现有确诊</view>
+		</view>
+		<view class="line">
+			<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+		</view>
+		<view class="bar">
+			<ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+		</view>
+	</view>
+</view>
